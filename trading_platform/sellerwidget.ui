@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SellerWidget</class>
+ <widget class="QWidget" name="SellerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>778</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>778</width>
+    <height>523</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>778</width>
+    <height>523</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="tab_modity_release">
+      <attribute name="title">
+       <string>发布商品</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidget_modity">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>90</y>
+         <width>331</width>
+         <height>251</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>315</width>
+         <height>251</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="3" column="3">
+         <widget class="QLineEdit" name="lineEdit_moditynumber"/>
+        </item>
+        <item row="4" column="3">
+         <widget class="QLineEdit" name="lineEdit_moditydescprition"/>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>请输入商品数量：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>请输入商品描述：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLineEdit" name="lineEdit_modityname"/>
+        </item>
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>请输入商品名称：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>请输入商品价格：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLineEdit" name="lineEdit_modityprice"/>
+        </item>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="btn_release1">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>360</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>预发布</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_release">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>360</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>发布</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>60</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>请确认您的商品信息</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>60</y>
+         <width>181</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>请输入您要发布的商品信息</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_modity_view">
+      <attribute name="title">
+       <string>修改商品</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidget_all_modity">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>50</y>
+         <width>421</width>
+         <height>411</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_deletemodity">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>下架</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_5" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>271</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QRadioButton" name="rbtn_name">
+             <property name="text">
+              <string>商品名称</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="rbtn_price">
+             <property name="text">
+              <string>价格</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="rbtn_description">
+             <property name="text">
+              <string>描述</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="rbtn_number">
+             <property name="text">
+              <string>数量</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLineEdit" name="line_name"/>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="line_price"/>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="line_description"/>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="line_number"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_modity_revise">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>270</y>
+         <width>256</width>
+         <height>192</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_revise1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>230</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>预修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_revise">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>230</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_recovermodity">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>30</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>上架</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_refresh_1">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>10</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>刷新</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_order">
+      <attribute name="title">
+       <string>订单</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidget_order">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>50</y>
+         <width>651</width>
+         <height>411</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_refresh_2">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>10</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>刷新</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
